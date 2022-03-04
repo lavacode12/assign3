@@ -1,0 +1,29 @@
+{{> hero}}
+<div class="content-section">
+    <h2>How It Works</h2>
+    <div class="container">
+        <div class="card">
+            <img src="/img/choose.jpg" alt="">
+            <h5>Choose your meals</h5>
+            <p>Hundreds of menu items to choose from</p>
+        </div>
+        <div class="card">
+            <img src="/img/deliver.jpg" alt="">
+            <h5>We Deliver It To You</h5>
+            <p>Choose your dates for delivery</p>
+        </div>
+        <div class="card">
+            <img src="/img/enjoy.jpg" alt="">
+            <h5>Cook & Enjoy</h5>
+            <p>Eat your freshly cooked meal</p>
+        </div>
+    </div>
+</div>
+<div class="content-section">
+    <h2>Top Meals</h2>
+    <div class="container">
+        {{#each topMeals as |meal key|}}
+            {{> mealkit}}
+        {{/each}}
+    </div>
+</div>

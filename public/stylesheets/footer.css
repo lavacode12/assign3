@@ -1,0 +1,36 @@
+#footer {
+    background-color: #212924;
+}
+
+#footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    border-bottom: 1px solid #353535;
+}
+
+#info-section {
+    margin: 10px;
+}
+
+#info-section h5 {
+    color: white;
+    font-size: 22px;
+}
+
+#info-section p {
+    color: white;
+    font-size: 16px;
+}
+
+#footer-copyright {
+    padding: 20px;
+}
+
+#footer-copyright h3 {
+    margin: 0;
+    color: white;
+    margin-left: 10px;
+}

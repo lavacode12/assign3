@@ -1,0 +1,48 @@
+#hero-container {
+    background-color: #111111;
+    background-image: linear-gradient(rgba(0, 63, 37, 0.26), rgba(0, 34, 25, 0.63)), url("/img/food1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: 120px;
+}
+
+#hero-container h1 {
+    color: white;
+    font-weight: 800;
+    margin: 0;
+    font-size: 40px;
+    width: 250px;
+}
+
+#hero-container h5 {
+    color: white;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 50px 0;
+    width: 400px;
+    line-height: 30px;
+}
+
+#hero-container input[type="button"] {
+    outline: none;
+    border: none;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#hero-container input[type="button"]:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+    #hero-container {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

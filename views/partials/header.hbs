@@ -1,0 +1,29 @@
+<div id="header">
+    <a href="/" id="header-logo">
+        <img src="/img/logo.jfif" alt="">
+        <h1>Freshfood</h1>
+        <h2>MEAL KITS</h2>
+    </>
+    <div id="link-container">
+        {{#if home}}
+            <a class="selected" href="/">Home</a>
+            {{else}}
+            <a href="/">Home</a>
+        {{/if}}
+        {{#if menu}}
+            <a class="selected" href="/onTheMenu">Menu</a>
+            {{else}}
+            <a href="/onTheMenu">Menu</a>
+        {{/if}}
+        {{#if signup}}
+            <a class="selected" href="/registration">Sign Up</a>
+            {{else}}
+            <a href="/registration">Sign Up</a>
+        {{/if}}
+        {{#if login}}
+            <a class="selected" href="/sign-in">Login</a>
+            {{else}}
+            <a href="/sign-in">Login</a>
+        {{/if}}
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="login-wrapper">
+    <div class="container login-box">
+        <h1>{{ heading }}</h1>
+        <form action="/{{action}}" method="POST">
+            {{#if signup}}
+            <div class="textbox {{#if errors.firstname}}error{{/if}}">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="First Name" name="firstname" value="{{values.firstname}}">
+                {{#if errors.firstname}}
+                    <div class="error-container">
+                        <p>{{errors.firstname}}</p>
+                    </div>
+                {{/if}}
+            </div>
+            <div class="textbox {{#if errors.lastname}}error{{/if}}">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Last Name" name="lastname" value="{{values.lastname}}">
+                {{#if errors.lastname}}
+                    <div class="error-container">
+                        <p>{{errors.lastname}}</p>
+                    </div>
+                {{/if}}
+            </div>
+            {{/if}}
+            <div class="textbox {{#if errors.email}}error{{/if}}">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Email Address" name="email" value="{{values.email}}">
+                {{#if errors.email}}
+                    <div class="error-container">
+                        <p>{{errors.email}}</p>
+                    </div>
+                {{/if}}
+            </div>
+            <div class="textbox {{#if errors.password}}error{{/if}}">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" name="password" value="{{values.password}}">
+                {{#if errors.password}}
+                    <div class="error-container">
+                        <p>{{errors.password}}</p>
+                    </div>
+                {{/if}}
+            </div>
+            <div>
+                <button class="submit">Submit</button>
+            </div>
+        <form>
+    </div>
+</div>

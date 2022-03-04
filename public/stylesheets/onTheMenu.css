@@ -1,0 +1,24 @@
+#category-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(172, 172, 172, 0.63), rgba(255, 255, 255, 0.26));
+}
+
+#category-container #container {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+#category-container h2 {
+    color: #16773a;
+}
+
+#category-container #container .card, #category-container #container .card img {
+    width: 400px;
+}

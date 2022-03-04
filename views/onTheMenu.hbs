@@ -1,0 +1,10 @@
+<div id="category-container">
+    {{#each categories}}
+        <h2>{{this.categoryName}}</h2>
+        <div id="container">
+            {{#each this.mealKits as |meal key|}}
+                {{> mealkit}}
+            {{/each}}
+        </div>
+    {{/each}}
+</div>
